@@ -1,0 +1,177 @@
+:root {
+    /* ### Primary */
+
+    --pale_blue: hsl(225, 100%, 94%);
+    --blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: "Red Hat Display", sans-serif;
+    ;
+}
+
+.centrar {
+    margin: 0 auto;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale_blue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.card {
+    width: min(90%, 450px);
+    max-height: 701px;
+    background-color: #fff;
+    border-radius: 3rem;
+    padding-bottom: 4rem;
+}
+
+.img {
+    width: 100%;
+}
+
+.img--imagen {
+    width: 100%;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.texto-title {
+    text-align: center;
+    color: var(--Dark_blue);
+    font-weight: 900;
+    margin: 4rem 0 2rem 0;
+}
+
+.texto--txto {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 2rem 4.5rem;
+    color: var(--Desaturated_blue);
+}
+
+.plan {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--Very_pale_blue);
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.plan-icono {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.plan--icono__img {
+    width: 6rem;
+}
+
+.plan--precio__texto {
+    color: var(--Dark_blue);
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.plan--precio__monto {
+    text-align: left;
+    color: var(--Desaturated_blue);
+    font-weight: 600;
+}
+
+.plan--link {
+    color: var(--blue);
+    font-weight: 900;
+}
+
+.plan--link:hover {
+    text-decoration: none;
+    opacity: .7;
+}
+
+.principal {
+    width: 85%;
+    background-color: var(--blue);
+    margin: 3rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--Very_pale_blue);
+    font-weight: 900;
+    border-radius: 1rem;
+    box-shadow: -1px 35px 28px 0px var(--pale_blue);
+}
+
+.principal:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.secundario {
+    color: var(--Desaturated_blue);
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.secundario:hover {
+    color: var(--Dark_blue);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
